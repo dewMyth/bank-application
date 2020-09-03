@@ -7,7 +7,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1gzjYjmfJPOgbi2Rtkyh4n25fo3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -39,10 +47,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599124364604</updated>
+      <workItem from="1599124365875" duration="1348000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="527" y="84" width="374" height="633" key="#com.intellij.ide.util.MemberChooser" timestamp="1599125884186">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="527" y="84" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/72.27.1294.741@72.27.1294.741" timestamp="1599125884186" />
   </component>
 </project>
