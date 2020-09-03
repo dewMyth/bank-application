@@ -41,6 +41,7 @@ public class BankFunctions implements IBankFunctions{
         System.out.println("Please Enter Your Choice...");
         optionNo = input.nextInt();
 
+        boolean quit = false;
 
         switch (optionNo) {
             case 1 :
@@ -55,6 +56,10 @@ public class BankFunctions implements IBankFunctions{
             case 4:
                 displayDetails();
                 break;
+            case 5 :
+                quit = true;
+                break;
+
         }
         System.out.println("====================");
 
