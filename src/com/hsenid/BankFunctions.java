@@ -43,24 +43,26 @@ public class BankFunctions implements IBankFunctions{
 
         boolean quit = false;
 
-        switch (optionNo) {
-            case 1 :
-                checkBalance();
-                break;
-            case 2 :
-                deposit();
-                break;
-            case 3 :
-                withdraw();
-                break;
-            case 4:
-                displayDetails();
-                break;
-            case 5 :
-                quit = true;
-                break;
+        do {
+            switch (optionNo) {
+                case 1 :
+                    checkBalance();
+                    break;
+                case 2 :
+                    deposit();
+                    break;
+                case 3 :
+                    withdraw();
+                    break;
+                case 4:
+                    displayDetails();
+                    break;
+                case 5 :
+                    quit = true;
+                    break;
+            }
+        } while(!quit);
 
-        }
         System.out.println("====================");
 
 
@@ -78,6 +80,7 @@ public class BankFunctions implements IBankFunctions{
         }else {
             System.out.println("Enter valid amount!");
         }
+        menu();
     }
 
     @Override
@@ -92,6 +95,7 @@ public class BankFunctions implements IBankFunctions{
             System.out.println("Withdraw Successful !");
             System.out.println("Current Balance : " + a.getBalance());
         }
+        menu();
     }
 
     @Override
@@ -100,6 +104,7 @@ public class BankFunctions implements IBankFunctions{
         System.out.println("=======================");
         System.out.println("Your Current Balance is : " + a.getBalance());
         System.out.println("=======================");
+        menu();
     }
 
     @Override
@@ -111,5 +116,6 @@ public class BankFunctions implements IBankFunctions{
         System.out.println("Your Account No : " + a.getAccountNo());
         System.out.println("Your Current Balance is : " + a.getBalance());
         System.out.println("======================================");
+        menu();
     }
 }
