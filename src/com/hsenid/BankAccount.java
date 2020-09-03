@@ -4,7 +4,7 @@ public class BankAccount {
     private String username;
     private int accountNo;
     private String accountType;
-    private int balance;
+    private double balance;
 
     public String getUsername() {
         return username;
@@ -30,11 +30,11 @@ public class BankAccount {
         this.accountType = accountType;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 

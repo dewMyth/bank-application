@@ -19,7 +19,7 @@ public class BankFunctions implements IBankFunctions{
         a.setAccountType(input.next());
 
         System.out.println(a.getUsername()+ ", Initial Balance Please?");
-        a.setBalance(input.nextInt());
+        a.setBalance(input.nextDouble());
 
         menu();
     }
@@ -71,7 +71,7 @@ public class BankFunctions implements IBankFunctions{
     @Override
     public void deposit() {
         System.out.println("Enter the amount you are going to deposit...");
-        int depositAmount = input.nextInt();
+        double depositAmount = input.nextDouble();
 
         if(depositAmount > 0) {
              a.setBalance(a.getBalance() + depositAmount);
@@ -86,7 +86,7 @@ public class BankFunctions implements IBankFunctions{
     @Override
     public void withdraw() {
         System.out.println("Enter the amount you are going to withdraw...");
-        int withdrawAmount = input.nextInt();
+        double withdrawAmount = input.nextDouble();
 
         if( a.getBalance() < withdrawAmount) {
             System.out.println("Insufficient Balance, Try a amount below = " + a.getBalance());
