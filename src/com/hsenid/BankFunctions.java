@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class BankFunctions implements IBankFunctions{
 
     Scanner input =  new Scanner(System.in);
+    BankAccount a = new BankAccount();
 
     void begin(){
-        BankAccount a = new BankAccount();
 
         System.out.println("Hi Banker, What is your name?");
         a.setUsername(input.nextLine());
@@ -68,7 +68,18 @@ public class BankFunctions implements IBankFunctions{
 
     @Override
     public void deposit() {
-        System.out.println("Depositing......");
+        System.out.println("Enter the amount you are going to deposit...");
+        int depositAmount = input.nextInt();
+
+        if(depositAmount > 0) {
+             a.setBalance(a.getBalance() + depositAmount);
+            System.out.println("Deposit Successful !");
+            System.out.println("Current Balance : " + a.getBalance());
+        }else {
+            System.out.println("Enter valid amount!");
+        }
+
+
     }
 
     @Override
