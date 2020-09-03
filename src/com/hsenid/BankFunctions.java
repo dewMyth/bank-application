@@ -34,25 +34,50 @@ public class BankFunctions implements IBankFunctions{
         System.out.println("4. Display Details");
         System.out.println("5. Exit");
         System.out.println("========Menu========");
+
+
+        int optionNo;
+
+        System.out.println("Please Enter Your Choice...");
+        optionNo = input.nextInt();
+
+
+        switch (optionNo) {
+            case 1 :
+                checkBalance();
+                break;
+            case 2 :
+                deposit();
+                break;
+            case 3 :
+                withdraw();
+                break;
+            case 4:
+                displayDetails();
+                break;
+        }
+        System.out.println("====================");
+
+
     }
 
     @Override
     public void deposit() {
-
+        System.out.println("Depositing......");
     }
 
     @Override
     public void withdraw() {
-
+        System.out.println("Withdrawing......");
     }
 
     @Override
     public void checkBalance() {
-
+        System.out.println("Checking Balance......");
     }
 
     @Override
     public void displayDetails() {
-
+        System.out.println("Displaying......");
     }
 }
