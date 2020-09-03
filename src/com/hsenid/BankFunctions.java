@@ -78,13 +78,20 @@ public class BankFunctions implements IBankFunctions{
         }else {
             System.out.println("Enter valid amount!");
         }
-
-
     }
 
     @Override
     public void withdraw() {
-        System.out.println("Withdrawing......");
+        System.out.println("Enter the amount you are going to withdraw...");
+        int withdrawAmount = input.nextInt();
+
+        if( a.getBalance() < withdrawAmount) {
+            System.out.println("Insufficient Balance, Try a amount below = " + a.getBalance());
+        }else {
+            a.setBalance(a.getBalance() - withdrawAmount);
+            System.out.println("Withdraw Successful !");
+            System.out.println("Current Balance : " + a.getBalance());
+        }
     }
 
     @Override
