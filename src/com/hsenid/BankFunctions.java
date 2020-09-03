@@ -97,10 +97,19 @@ public class BankFunctions implements IBankFunctions{
     @Override
     public void checkBalance() {
         System.out.println("Checking Balance......");
+        System.out.println("=======================");
+        System.out.println("Your Current Balance is : " + a.getBalance());
+        System.out.println("=======================");
     }
 
     @Override
     public void displayDetails() {
         System.out.println("Displaying......");
+        System.out.println("============Your Details==============");
+        System.out.println("Your name is : " + a.getUsername());
+        System.out.println("Your Account type : " + a.getAccountType());
+        System.out.println("Your Account No : " + a.getAccountNo());
+        System.out.println("Your Current Balance is : " + a.getBalance());
+        System.out.println("======================================");
     }
 }
